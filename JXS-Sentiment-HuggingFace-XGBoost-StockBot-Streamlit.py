@@ -356,7 +356,7 @@ st.title("Comprehensive Financial Analysis")
 
 with st.sidebar.form("analysis_form"):
     st.header("Input Parameters")
-    ticker = st.text_input("Stock Ticker", "SQ").strip().upper()
+    ticker = st.text_input("Stock Ticker", "XYZ").strip().upper()
     keyword = st.text_input("Company Keyword", "Block").strip()
     forecast_days = st.slider("Days to Forecast", 1, 50, 7)
     debug_mode = st.checkbox("Show Debugging Info")
