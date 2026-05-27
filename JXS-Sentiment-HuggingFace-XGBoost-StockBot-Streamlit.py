@@ -363,7 +363,7 @@ with st.sidebar.form("analysis_form"):
     run_button = st.form_submit_button("Run Analysis")
 
 if not run_button:
-    st.info("Enter a stock ticker in sidebar at top left corner, and click **Run Analysis** to start. Using the button prevents repeated Yahoo Finance calls and helps avoid rate limits.")
+    st.info("Enter a stock ticker in sidebar at top left corner. Click **Run Analysis** to start. Using the button prevents repeated Yahoo Finance calls and helps avoid rate limits.")
     st.stop()
 
 if not ticker:
