@@ -1,1 +1,1 @@
-# JXS_Sentiment_HuggingFace_StockBot
+# IRIS FinBERT Console JXS
