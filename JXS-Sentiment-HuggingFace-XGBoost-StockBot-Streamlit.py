@@ -363,7 +363,9 @@ with st.sidebar.form("analysis_form"):
     run_button = st.form_submit_button("Run IRIS Scan")
 
 if not run_button:
-    st.info("IRIS, named after the Greek messenger goddess and the colors of the rainbow, is an stock analysis dashboard that delivers real-time news sentiment insights through Hugging Face's FinBERT NLP, combining market data, technical indicators, and XGBoost forecasting to help users interpret potential stock trends. Enter a stock ticker in sidebar at top left corner. Click **Run IRIS Scan** to start. Using the button prevents repeated Yahoo Finance calls and helps avoid rate limits.")
+    st.info("IRIS, named after the Greek messenger goddess and the colors of the rainbow, is an stock analysis dashboard that delivers real-time news sentiment insights through Hugging Face's FinBERT NLP, combining market data, technical indicators, and XGBoost forecasting to help users interpret potential stock trends.
+    
+            Enter a stock ticker in sidebar at top left corner. Click **Run IRIS Scan** to start.")
     st.stop()
 
 if not ticker:
