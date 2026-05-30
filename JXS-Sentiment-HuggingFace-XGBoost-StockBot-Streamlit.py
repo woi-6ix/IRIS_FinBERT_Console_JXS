@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 { color: #800080; }
     unsafe_allow_html=True,
 )
 
-st.title("Comprehensive Financial Analysis")
+st.title("IRIS Stock Financial Analysis Console")
 
 with st.sidebar.form("analysis_form"):
     st.header("Input Parameters")
@@ -360,10 +360,10 @@ with st.sidebar.form("analysis_form"):
     keyword = st.text_input("Company Keyword", "S&P 500").strip()
     forecast_days = st.slider("Days to Forecast", 1, 50, 7)
     debug_mode = st.checkbox("Show Debugging Info")
-    run_button = st.form_submit_button("Run Analysis")
+    run_button = st.form_submit_button("Run IRIS Scan")
 
 if not run_button:
-    st.info("Enter a stock ticker in sidebar at top left corner. Click **Run Analysis** to start. Using the button prevents repeated Yahoo Finance calls and helps avoid rate limits.")
+    st.info("IRIS, named after the Greek messenger goddess and the colors of the rainbow, is an stock analysis dashboard that delivers real-time news sentiment insights through Hugging Face's FinBERT NLP, combining market data, technical indicators, and XGBoost forecasting to help users interpret potential stock trends. Enter a stock ticker in sidebar at top left corner. Click **Run IRIS Scan** to start. Using the button prevents repeated Yahoo Finance calls and helps avoid rate limits.")
     st.stop()
 
 if not ticker:
