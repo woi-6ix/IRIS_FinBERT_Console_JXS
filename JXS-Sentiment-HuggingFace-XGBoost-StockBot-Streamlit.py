@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 { color: #800080; }
     unsafe_allow_html=True,
 )
 
-st.title("IRIS Stock Sentiment Console")
+st.title("IRIS Stock Financial Sentiment Console")
 
 with st.sidebar.form("analysis_form"):
     st.header("Input Parameters")
